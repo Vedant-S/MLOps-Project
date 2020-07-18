@@ -4,10 +4,10 @@ ________________________________________________________________________________
 `Integrating Docker and Jenkins to perform Testing & Monitoring`
 ____________________________________________________________________________________________________________________
 ### PROBLEM STATEMENT:
-JOB 1: Pull the Github repository automatically when some developers push the repository to Github.
-JOB 2: By looking at the code or program file, Jenkins should automatically start the respective language interpreter and install image container to deploy code.
-JOB 3: Test your app if it is working or not.
-JOB 4: If the app is not working, then send an email to the developer with error messages.
+- JOB 1: Pull the Github repository automatically when some developers push the repository to Github.
+- JOB 2: By looking at the code or program file, Jenkins should automatically start the respective language interpreter and install image container to deploy code.
+- JOB 3: Test your app if it is working or not.
+- JOB 4: If the app is not working, then send an email to the developer with error messages.
 ____________________________________________________________________________________________________________________
 ### Pre-Requisites:
 We are assuming that Docker, Git, and Jenkins with the Git Plugin are installed in the system.
