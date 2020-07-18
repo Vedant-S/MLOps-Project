@@ -252,24 +252,26 @@ curl --user "<username>:<password>" JENKINS_URL/view/Mlops-project-1/job/model_r
 e.g. curl --user "admin:admin" http://192.123.32.2932:8080/view/Mlops-project-1/job/model_retrain/build?token=retraining_model
 ```
 ____________________________________________________________________________________________________________________
-2.5. Job-5: Notifying that the best model is being created
+2.5. Job-5: Notifying that the best model is being created:
+____________________________________________________________________________________________________________________
 If the trained model gives the desired accuracy at the beginning or by Hyper-parameter tuning, a mail is automatically sent to the user confirming the action.
-For creating the Job for Notifying that the best model is being created:
-Select new item option from the Jenkins menu.
-Assign a name to the Job ( eg. model_notify)and select it to be a Freestyle project.
-From the Configure Job option, we set the configurations.
-From the Build Triggers section, we select Trigger builds remotely an option.
-Provide an Authentication Token
-In the Build Section, we type the following script:
+- For creating the Job for Notifying that the best model is being created:
+- Select new item option from the Jenkins menu.
+- Assign a name to the Job ( eg. model_notify)and select it to be a Freestyle project.
+- From the Configure Job option, we set the configurations.
+- From the Build Triggers section, we select Trigger builds remotely an option.
+- Provide an Authentication Token
+- In the Build Section, we type the following script:
+```
 sudo cp -rf /root/Desktop/ml_models/ *
 sudo python3 sendmail.py
-7. On clicking the Save option, we add the Job to our Job List.
-Thus, the Job has been setup. To Trigger the Build, the following command would run the job:
+```
+- On clicking the Save option, we add the Job to our Job List.
+- Thus, the Job has been setup. To Trigger the Build, the following command would run the job:
+```
 curl --user "<username>:<password>" JENKINS_URL/view/Mlops-project-1/job/model_notify/build?token=TOKEN_NAME
 e.g. curl --user "admin:admin" http://192.123.32.2932:8080/view/Mlops-project-1/job/model_notify/build?token=model_notification
 Now, we have to introduce these remote triggers we have created in our Model file. For that, at the end of the code, we add a conditional statement:
-
-
 
 import os
 
@@ -278,8 +280,10 @@ if accuracy <= 0.9:
 else:
     print("The model is successfully trained for the desired accuracy. You will soon receive a mail.)
     os.system("curl --user "admin:admin" http://192.123.32.2932:8080/view/Mlops-project-1/job/model_notify/build?token=model_notification")
+```
 ____________________________________________________________________________________________________________________
-2.5. Job-6: Additional Monitoring Job
+2.5. Job-6: Additional Monitoring Job:
+____________________________________________________________________________________________________________________
 - If the container where the app is running, fails due to any reason then this job will automatically start the container again from the last trained model.
 - For monitoring the Jobs created:
 - Select a new item option from the Jenkins menu.
@@ -308,21 +312,19 @@ ________________________________________________________________________________
 ### Understanding the Complete Workflow:
 ____________________________________________________________________________________________________________________
 When a user adds a new model in the connected GitHub account,
-★ Jenkins would download the code into the local system.
-★ Once the code is received, Job#2 would classify the model and add it to the respective folder and attach the folder as the volume of the Docker Container.
-★ Job#3 would execute the file inside the Docker container and train the model and predict the accuracy or metrics.
-★ Now, if the accuracy is below the desired, Job#4 would run. It would retrain the model by changing the hyper-parameters.
-★ Once the accuracy becomes greater than the desired, Job#5 will be fired, resulting in the automatic sending of an e-mail to the Developer.
-★ At last, Job#6 is set as a Monitoring Job. It would continuously check whether the container crashes during training and would restart them.
+-  Jenkins would download the code into the local system.
+-  Once the code is received, Job#2 would classify the model and add it to the respective folder and attach the folder as the volume of the Docker Container.
+-  Job#3 would execute the file inside the Docker container and train the model and predict the accuracy or metrics.
+-  Now, if the accuracy is below the desired, Job#4 would run. It would retrain the model by changing the hyper-parameters.
+-  Once the accuracy becomes greater than the desired, Job#5 will be fired, resulting in the automatic sending of an e-mail to the Developer.
+-  At last, `Job#6` is set as a Monitoring Job. It would continuously check whether the container crashes during training and would restart them.
 ____________________________________________________________________________________________________________________
 ### Conclusion:
 ____________________________________________________________________________________________________________________
-
-```
 Previously, we had an additional 3 Dense layers attached to the pre-trained model of VGG16. We came to an accuracy of 86%.
 After running this Pipeline, 2 more layers were added at the end through these automation tools, due to which the accuracy touched 92%.
-This method of Automated Hyperparameter Tuning would help in adjusting the accuracy of Machine Learning models faster and efficiently. This is the main reason for using the power of ML-Ops to solve these real-life situations.
-```
+`This method of Automated Hyperparameter Tuning would help in adjusting the accuracy of Machine Learning models faster and efficiently.`
+`This is the main reason for using the power of ML-Ops to solve these real-life situations.`
 ____________________________________________________________________________________________________________________
 ### Author:
 ----------------------------------
