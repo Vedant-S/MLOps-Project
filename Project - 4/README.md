@@ -323,7 +323,9 @@ ________________________________________________________________________________
 ____________________________________________________________________________________________________________________
 Previously, we had an additional 3 Dense layers attached to the pre-trained model of VGG16. We came to an accuracy of 86%.
 After running this Pipeline, 2 more layers were added at the end through these automation tools, due to which the accuracy touched 92%.
-`This method of Automated Hyperparameter Tuning would help in adjusting the accuracy of Machine Learning models faster and efficiently.`</br>
+</br>
+`This method of Automated Hyperparameter Tuning would help in adjusting the accuracy of Machine Learning models faster and efficiently.`
+</br>
 `This is the main reason for using the power of ML-Ops to solve these real-life situations.`
 ____________________________________________________________________________________________________________________
 ### Author:
