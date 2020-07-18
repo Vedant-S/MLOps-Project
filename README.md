@@ -1,7 +1,7 @@
 __________________________________________________________________________________________________________________
 # MLOps Project:
 __________________________________________________________________________________________________________________
-Project completed under LinuxWorld Informatics Ltd. - MLOps Training and includes the EKS task containing multiple use cases like fargate, etc.
+Project completed under LinuxWorld Informatics Ltd. - MLOps Training.
 _________________________________________________________________________________________________________________
 `As ML matures from research to applied business solutions, so do we need to improve the maturity of its operation processes.`
 
