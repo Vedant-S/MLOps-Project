@@ -43,7 +43,9 @@ This would create our Apache image in the local machine.
 ____________________________________________________________________________________________________________________
 2. Building the Jenkins Pipeline:
 ____________________________________________________________________________________________________________________
+____________________________________________________________________________________________________________________
 2.1. Job-1: Automatic Code Download:
+____________________________________________________________________________________________________________________
 - Before downloading the code, we need to create some folders on our local machine which would act as volumes for the Docker containers.
 - To create the folders in our local machine:
 ```
