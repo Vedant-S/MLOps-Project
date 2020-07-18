@@ -313,17 +313,17 @@ ________________________________________________________________________________
 ____________________________________________________________________________________________________________________
 When a user adds a new model in the connected GitHub account,
 -  Jenkins would download the code into the local system.
--  Once the code is received, Job#2 would classify the model and add it to the respective folder and attach the folder as the volume of the Docker Container.
--  Job#3 would execute the file inside the Docker container and train the model and predict the accuracy or metrics.
--  Now, if the accuracy is below the desired, Job#4 would run. It would retrain the model by changing the hyper-parameters.
--  Once the accuracy becomes greater than the desired, Job#5 will be fired, resulting in the automatic sending of an e-mail to the Developer.
+-  Once the code is received, `Job#2` would classify the model and add it to the respective folder and attach the folder as the volume of the Docker Container.
+-  `Job#3` would execute the file inside the Docker container and train the model and predict the accuracy or metrics.
+-  Now, if the accuracy is below the desired, `Job#4` would run. It would retrain the model by changing the hyper-parameters.
+-  Once the accuracy becomes greater than the desired, `Job#5` will be fired, resulting in the automatic sending of an e-mail to the Developer.
 -  At last, `Job#6` is set as a Monitoring Job. It would continuously check whether the container crashes during training and would restart them.
 ____________________________________________________________________________________________________________________
 ### Conclusion:
 ____________________________________________________________________________________________________________________
 Previously, we had an additional 3 Dense layers attached to the pre-trained model of VGG16. We came to an accuracy of 86%.
 After running this Pipeline, 2 more layers were added at the end through these automation tools, due to which the accuracy touched 92%.
-`This method of Automated Hyperparameter Tuning would help in adjusting the accuracy of Machine Learning models faster and efficiently.`
+`This method of Automated Hyperparameter Tuning would help in adjusting the accuracy of Machine Learning models faster and efficiently.`</br>
 `This is the main reason for using the power of ML-Ops to solve these real-life situations.`
 ____________________________________________________________________________________________________________________
 ### Author:
