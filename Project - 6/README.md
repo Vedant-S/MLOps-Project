@@ -8,6 +8,8 @@ Medium Article Link: https://medium.com/@iamsvedant/covid-19-instance-segmentati
 Medium Profile Link: https://medium.com/@iamsvedant
 </br>
 Medium Profile ID: `@iamsvedant`
+</br>
+In this Article the Chest X-Ray Images of COVID patients are available on Kaggle: https://github.com/ieee8023/covid-chestxray-dataset/tree/master/images
 ____________________________________________________________________________________________________________________
 ### Author:
 ----------------------------------
