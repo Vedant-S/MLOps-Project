@@ -39,5 +39,5 @@ ________________________________________________________________________________
 ### Author:
 ----------------------------------
 ```diff
-! Vedant Shrivastava | vedantshrivastava466@gmail.com
++ Vedant Shrivastava | vedantshrivastava466@gmail.com
 ```
