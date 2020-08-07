@@ -2,7 +2,7 @@ ________________________________________________________________________________
 # MLOps Project:
 __________________________________________________________________________________________________________________
 Project completed under LinuxWorld Informatics Ltd. - MLOps Training.
-_________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________
 `As ML matures from research to applied business solutions, so do we need to improve the maturity of its operation processes.`
 
 MLOps is communication between data scientists and the operations or production team. It’s deeply collaborative in nature, designed to eliminate waste, automate as much as possible, and produce richer, more consistent insights with machine learning. ML can be a game changer for a business, but without some form of systemization, it can devolve into a science experiment.
