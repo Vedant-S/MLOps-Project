@@ -1,8 +1,6 @@
 __________________________________________________________________________________________________________________
 # MLOps Project:
 __________________________________________________________________________________________________________________
-Project completed under LinuxWorld Informatics Ltd. - MLOps Training.
-__________________________________________________________________________________________________________________
 `As ML matures from research to applied business solutions, so do we need to improve the maturity of its operation processes.`
 
 MLOps is communication between data scientists and the operations or production team. It’s deeply collaborative in nature, designed to eliminate waste, automate as much as possible, and produce richer, more consistent insights with machine learning. ML can be a game changer for a business, but without some form of systemization, it can devolve into a science experiment.
@@ -35,6 +33,8 @@ CI/CD helps to accelerate and improve the efficiency of workflows while shorteni
 By definition, a well-implemented MLOps process should achieve continuous development and delivery (CI/CD) for data and ML intensive applications. However, an effective CI/CD system is vital to this process. Not only should it understand ML elements natively but it also must stay in sync with any changes to underlying data or code, irrespective of the platform on which the model runs.
 
 `ML engineers looking to truly automate ML pipelines need a way to natively enable continuous integration of machine learning models to production`
+__________________________________________________________________________________________________________________
+Project completed under LinuxWorld Informatics Ltd. - MLOps Training.
 _________________________________________________________________________________________________________________
 ### Author:
 ----------------------------------
