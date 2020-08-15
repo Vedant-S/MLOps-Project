@@ -35,7 +35,7 @@ By definition, a well-implemented MLOps process should achieve continuous develo
 `ML engineers looking to truly automate ML pipelines need a way to natively enable continuous integration of machine learning models to production`
 __________________________________________________________________________________________________________________
 Project completed under LinuxWorld Informatics Ltd. - MLOps Training.
-_________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________
 ### Author:
 ----------------------------------
 ```diff
