@@ -32,9 +32,9 @@ CI/CD helps to accelerate and improve the efficiency of workflows while shorteni
 
 By definition, a well-implemented MLOps process should achieve continuous development and delivery (CI/CD) for data and ML intensive applications. However, an effective CI/CD system is vital to this process. Not only should it understand ML elements natively but it also must stay in sync with any changes to underlying data or code, irrespective of the platform on which the model runs.
 
-`ML engineers looking to truly automate ML pipelines need a way to natively enable continuous integration of machine learning models to production`
+`ML engineers looking to truly automate ML pipelines need a way to natively enable continuous integration of machine learning models to production.`
 __________________________________________________________________________________________________________________
-Project completed under LinuxWorld Informatics Ltd. - MLOps Training.
+Project completed under LinuxWorld Informatics Ltd. - MLOps Training. 
 _________________________________________________________________________________________________________________
 ### Author:
 ----------------------------------
