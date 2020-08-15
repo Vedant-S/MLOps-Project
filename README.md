@@ -9,7 +9,7 @@ MLOps brings business interest back to the forefront of your ML operations. Data
 Let us now begin this article to take a deep dive into what is DevOps, its features and architecture. Main Technology/Tools Used:
 _________________________________________________________________________________________________________________
 ### Why Should My Organization Adopt MLOps?
-________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________
 Contrary to what you may think, MLOps allows your data scientists freedom to do what they do best — find answers. Take business decisions off their plates, and they can build and deploy models that get your insights more quickly.
 Think about it. You didn’t hire your data team to understand the ins and outs of your industry. You didn’t hire them to keep up with regulation. You hired them for their skills in information gleaning. Remove the barriers and let them find your answers.
 MLOps follows a similar pattern to DevOps. The practices that drive a seamless integration between your development cycle and your overall operations process can also transform how your organization handles big data. Just like DevOps shortens production life cycles by creating better products with each iteration, MLOps drives insights you can trust and put into play more quickly.
